@@ -6,3 +6,15 @@ function checkPrime(number) {
     }
     return ((number) + " is prime");
 }
+function timesTable(number){
+    var rows = number + 1;
+    var cells = number + 1;
+    document.write("<table border='5'>");
+    for (var a=1; a < rows; a++) {
+            document.write("<tr>");
+            for(var b=1; b < cells; b++) {
+                document.write("<td>" + (a*b) + "</td>");
+        }
+        document.write("</tr>");
+        }
+}
